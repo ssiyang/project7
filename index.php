@@ -133,41 +133,18 @@
       var pass2 = $("#pass2").val();
       var message = $("#mail-message").val();
 
-      function isVaildEmaillAddress(emailAddress){
+       $("#error").load("mail.php", {
+      
+        name : name,
+        email : email,
+        pass1 : pass1,
+        pass2 : pass2,
+        message : message,
+        submit : submit,  
+      
+      });
 
-        var pattern = /^\b[A-Z0-9-]+@[A-Z0-9]+\.com\b/i;
-        return pattern.test(emailAddress);
-
-      }
-
-      if (name == "" || email == "" || pass1 == "" || pass2 == "" || message == "") {
-
-        errorMessage = "請輸入完整信息";
-
-      } else if (!isVaildEmaillAddress(email)) {
-
-        errorMessage = "請輸入正確格式的郵箱地址";
-
-      } else if (pass1 != pass2) {
-
-        errorMessage = "請確認輸入的密碼";
-
-      }
-
-      if (errorMessage == "") {
-
-        $("#error").html("郵件已發送");
-        $("#error").css("color", "green");
-
-      } else {
-
-        $("#error").html(errorMessage);
-        $("#error").css("color", "red");
-
-      }
-
-    })
-
+    });
 
 
   </script>
