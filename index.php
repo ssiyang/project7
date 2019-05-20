@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
-    <title>天氣預報網站</title>
+    <title>驗證表單 (PHP)</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
