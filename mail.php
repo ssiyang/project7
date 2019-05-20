@@ -29,7 +29,7 @@
             
         } else {
         $mailToname = "brian.com";
-        $mailTo = "brian19960@hotmail.com";
+        $mailTo = "123@hotmail.com";
         $mailFromname = $name;
         $mailFrom = $email;
         $mailSubject = "網站聯繫表單";
